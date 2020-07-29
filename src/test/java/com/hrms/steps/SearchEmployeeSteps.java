@@ -1,5 +1,6 @@
 package com.hrms.steps;
 
+import com.hrms.pages.DashBoardPageElements;
 import com.hrms.pages.LoginPageElements;
 import com.hrms.testbase.PageInitializer;
 import com.hrms.utils.ConfigsReader;
@@ -9,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class employeeSearch {
+public class SearchEmployeeSteps extends commonMethods{
 	
 
 	@Given("user logged in with valid login credentials")
@@ -46,6 +47,12 @@ public class employeeSearch {
 	public void user_enteres_valid_employee_name_nad_last_name() {
 	    
 	 
+	}
+	@When("user should be able to modify employee personal details")
+	public void user_should_be_able_to_modify_employee_personal_details() {
+	    jsClick(dashboard.PIM);
+	    click(dashboard.EmployeeList);
+	    
 	}
 
 }

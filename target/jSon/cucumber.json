@@ -1,0 +1,201 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3007888000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a JWT is generated",
+            "match": {
+              "location": "com.hrms.API.steps.practice.TokenGenerationSteps.a_JWT_is_generated()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-26T16:27:58.424Z",
+        "line": 7,
+        "name": "Creating an employee",
+        "description": "",
+        "id": "systan-hrms-api-end-to-end-workflow;creating-an-employee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 972700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a request is prepared to create an employee",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.a_request_is_prepared_to_create_an_employee()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a POST call is made to create an employee",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.a_POST_call_is_made_to_create_an_employee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code for creating an employee is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 44
+                }
+              ],
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.the_status_code_for_creating_an_employee_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1004600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the employee is created",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.the_employee_is_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the employee ID is stored as a global variable to be used for other calls",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.the_employee_ID_is_stored_as_a_global_variable_to_be_used_for_other_calls()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 89747400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a JWT is generated",
+            "match": {
+              "location": "com.hrms.API.steps.practice.TokenGenerationSteps.a_JWT_is_generated()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-26T16:28:01.531Z",
+        "line": 14,
+        "name": "Retrieving created employee",
+        "description": "",
+        "id": "systan-hrms-api-end-to-end-workflow;retrieving-created-employee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "a requast is prepared to retrieve the created employee",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.a_requast_is_prepared_to_retrieve_the_created_employee()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a GET call is made to retrieve the created employee",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.a_GET_call_is_made_to_retrieve_the_created_employee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the status code for retrieving the created employee is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.the_status_code_for_retrieving_the_created_employee_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the retrieved employee ID matches the globaly stored employee ID",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.the_retrieved_employee_ID_matches_the_globaly_stored_employee_ID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the retrieved data matches the data used to create an employee",
+            "match": {
+              "location": "com.hrms.API.steps.practice.WorkflowAllSteps.the_retrieved_data_matches_the_data_used_to_create_an_employee()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Systan HRMS API End to End Workflow",
+    "description": "",
+    "id": "systan-hrms-api-end-to-end-workflow",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/APIworkflow.feature",
+    "tags": []
+  }
+]

@@ -14,6 +14,9 @@ public class AddEmployeePage extends BaseClass{
 	@FindBy(id="lastName")
 	public WebElement LastName;
 	
+	@FindBy (id="middleName")
+	public WebElement middleName;
+	
 	@FindBy (xpath = "//input[@name='chkLogin']")
 	public WebElement checkBoxLoginDetails;
 	
@@ -31,6 +34,11 @@ public class AddEmployeePage extends BaseClass{
 	
 	@FindBy(id="employeeId")
 	public WebElement empID;	
+	
+	
+	
+	@FindBy (xpath = "//div[@id='profile-pic']/h1")
+	public WebElement verifiedName;
 	
 	public AddEmployeePage() {
 		PageFactory.initElements(driver, this);
